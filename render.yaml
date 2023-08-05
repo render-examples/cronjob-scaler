@@ -1,0 +1,13 @@
+services:
+  - type: cron
+    name: cron-scaler-9am-weekdays
+    schedule: "0 9 * * 1-5" 
+    runtime: docker
+    plan: standard
+    envVars:
+      - key: SERVICE_ID
+        sync: false
+      - key: RENDER_API_KEY
+        sync: false
+      - key: DESIRED_REPLICAS
+        sync: false
