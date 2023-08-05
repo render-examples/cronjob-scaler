@@ -9,5 +9,5 @@ services:
         sync: false
       - key: RENDER_API_KEY
         sync: false
-      - key: DESIRED_REPLICAS
+      - key: DESIRED_INSTANCES
         sync: false
